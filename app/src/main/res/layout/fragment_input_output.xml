@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputOutputFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/io_background"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_1ssp"
+        android:paddingEnd="10sp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputLine"
+            style="@style/ioText"
+            android:inputType="text|textNoSuggestions"
+            android:maxLines="1"
+            android:layout_weight="2"
+            android:textSize="@dimen/_40ssp"
+            tools:text="2+3">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <TextView
+            android:id="@+id/outputLine"
+            style="@style/ioText"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:textSize="@dimen/_25ssp"
+            tools:text="5"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

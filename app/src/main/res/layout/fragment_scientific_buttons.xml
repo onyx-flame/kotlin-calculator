@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StandardButtonsFragment">
+
+    <TableLayout
+        android:id="@+id/scientific_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_background">
+
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/button_inv"
+                style="@style/operatorButton"
+                android:text="INV"/>
+            <Button
+                android:id="@+id/button_power_minus_1"
+                style="@style/operatorButton"
+                android:text="x⁻¹" />
+            <Button
+                android:id="@+id/button_factorial"
+                style="@style/operatorButton"
+                android:text="!" />
+        </TableRow>
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/button_sin"
+                style="@style/operatorButton"
+                android:text="sin" />
+            <Button
+                android:id="@+id/button_cos"
+                style="@style/operatorButton"
+                android:text="cos" />
+
+            <Button
+                android:id="@+id/button_tan"
+                style="@style/operatorButton"
+                android:text="tan" />
+            <!--÷-->
+        </TableRow>
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/button_ln"
+                style="@style/operatorButton"
+                android:text="ln" />
+            <Button
+                android:id="@+id/button_log"
+                style="@style/operatorButton"
+                android:text="log" />
+            <Button
+                android:id="@+id/button_sqrt"
+                style="@style/operatorButton"
+                android:text="√" />
+            <!--×-->
+        </TableRow>
+        <TableRow android:layout_weight="1">
+            <Button
+                android:id="@+id/button_pi"
+                style="@style/operatorButton"
+                android:text="π" />
+            <Button
+                android:id="@+id/button_e"
+                style="@style/operatorButton"
+                android:text="e" />
+            <Button
+                android:id="@+id/button_power"
+                style="@style/operatorButton"
+                android:text="^"/>
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>
