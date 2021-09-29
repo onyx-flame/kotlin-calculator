@@ -15,60 +15,60 @@
             <Button
                 android:id="@+id/button_inv"
                 style="@style/scientificButton"
-                android:text="INV"/>
+                android:text="@string/invert"/>
             <Button
                 android:id="@+id/button_power_minus_1"
                 style="@style/scientificButton"
-                android:text="x⁻¹" />
+                android:text="@string/power_minus_one" />
             <Button
                 android:id="@+id/button_factorial"
                 style="@style/scientificButton"
-                android:text="!" />
+                android:text="@string/factorial_sign" />
         </TableRow>
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_sin"
                 style="@style/scientificButton"
-                android:text="sin" />
+                android:text="@string/sin_function" />
             <Button
                 android:id="@+id/button_cos"
                 style="@style/scientificButton"
-                android:text="cos" />
+                android:text="@string/cos_function" />
 
             <Button
                 android:id="@+id/button_tan"
                 style="@style/scientificButton"
-                android:text="tan" />
+                android:text="@string/tan_function" />
             <!--÷-->
         </TableRow>
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_ln"
                 style="@style/scientificButton"
-                android:text="ln" />
+                android:text="@string/ln_function" />
             <Button
                 android:id="@+id/button_log"
                 style="@style/scientificButton"
-                android:text="log" />
+                android:text="@string/log_function" />
             <Button
                 android:id="@+id/button_sqrt"
                 style="@style/scientificButton"
-                android:text="√" />
+                android:text="@string/sqrt_function" />
             <!--×-->
         </TableRow>
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_pi"
                 style="@style/scientificButton"
-                android:text="π" />
+                android:text="@string/pi_sign" />
             <Button
                 android:id="@+id/button_e"
                 style="@style/scientificButton"
-                android:text="e" />
+                android:text="@string/exp_sign" />
             <Button
                 android:id="@+id/button_power"
                 style="@style/scientificButton"
-                android:text="^"/>
+                android:text="@string/power_sign"/>
         </TableRow>
 
     </TableLayout>

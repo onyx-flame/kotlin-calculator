@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/demo/res/layout-land/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/demo/res/layout/rt.xml" value="0.1" />
+        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/full/res/layout/rt.xml" value="0.1" />
+        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/layout-land/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/layout/fragment_input_otput.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/onyx/AndroidStudioProjects/SimpleCalculator/app/src/main/res/layout/fragment_input_output.xml" value="0.16666666666666666" />

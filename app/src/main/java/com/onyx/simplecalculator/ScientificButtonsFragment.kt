@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.onyx.simplecalculator.databinding.FragmentScientificButtonsBinding
-import com.onyx.simplecalculator.databinding.FragmentStandardButtonsBinding
 
 class ScientificButtonsFragment : Fragment() {
 
@@ -19,7 +18,7 @@ class ScientificButtonsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentScientificButtonsBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -29,12 +28,11 @@ class ScientificButtonsFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
         val allScientificButtons: ArrayList<View?> = binding.scientificButtonsLayout.touchables
-        for (view in allScientificButtons!!) {
+        for (view in allScientificButtons) {
             (view as Button).setOnClickListener {
                 when(view.id) {
                     binding.buttonInv.id -> invertButtons()
                     binding.buttonPowerMinus1.id -> printButtonText("^-1")
-                    binding.buttonFactorial.id -> printButtonText(view.text.toString())
                     binding.buttonSin.id -> printButtonText(if (binding.buttonSin.text.endsWith("n")) "sin(" else "asin(")
                     binding.buttonCos.id -> printButtonText(if (binding.buttonCos.text.endsWith("s")) "cos(" else "acos(")
                     binding.buttonTan.id -> printButtonText(if (binding.buttonTan.text.endsWith("n")) "tan(" else "atan(")
@@ -43,7 +41,8 @@ class ScientificButtonsFragment : Fragment() {
                     binding.buttonSqrt.id -> printButtonText(if (binding.buttonSqrt.text.endsWith("√")) "sqrt(" else "^2")
                     binding.buttonPi.id -> printButtonText("pi")
                     binding.buttonE.id,
-                    binding.buttonPower.id -> printButtonText(view.text.toString())
+                    binding.buttonPower.id,
+                    binding.buttonFactorial.id -> printButtonText(view.text.toString())
                 }
             }
         }
@@ -52,19 +51,19 @@ class ScientificButtonsFragment : Fragment() {
 
     private fun invertButtons() {
         if (binding.buttonSin.text == "sin") {
-            binding.buttonSin.text = "sin⁻¹"
-            binding.buttonCos.text = "cos⁻¹"
-            binding.buttonTan.text = "tan⁻¹"
-            binding.buttonLn.text = "eˣ"
-            binding.buttonLog.text = "10ˣ"
-            binding.buttonSqrt.text = "x²"
+            binding.buttonSin.text = getString(R.string.asin_function)
+            binding.buttonCos.text = getString(R.string.acos_function)
+            binding.buttonTan.text = getString(R.string.atan_function)
+            binding.buttonLn.text = getString(R.string.exp_power_function)
+            binding.buttonLog.text = getString(R.string.ten_power_function)
+            binding.buttonSqrt.text = getString(R.string.square_function)
         } else {
-            binding.buttonSin.text = "sin"
-            binding.buttonCos.text = "cos"
-            binding.buttonTan.text = "tan"
-            binding.buttonLn.text = "ln"
-            binding.buttonLog.text = "log"
-            binding.buttonSqrt.text = "√"
+            binding.buttonSin.text = getString(R.string.sin_function)
+            binding.buttonCos.text = getString(R.string.cos_function)
+            binding.buttonTan.text = getString(R.string.tan_function)
+            binding.buttonLn.text = getString(R.string.ln_function)
+            binding.buttonLog.text = getString(R.string.log_function)
+            binding.buttonSqrt.text = getString(R.string.sqrt_function)
         }
     }
 

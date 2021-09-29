@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">SimpleCalculator</string>
+
+    <string name="rotate_sign">⟳</string>
+    <string name="left_bracket_sign">(</string>
+    <string name="right_bracket_sign">)</string>
+    <string name="erase_sign">⌫</string>
+    <string name="divide_sign">÷</string>
+    <string name="multiply_sign">×</string>
+    <string name="minus_sign">-</string>
+    <string name="equals_sign">=</string>
+    <string name="plus_sign">+</string>
+    <string name="dot">.</string>
+    <string name="digit_0">0</string>
+    <string name="digit_1">1</string>
+    <string name="digit_2">2</string>
+    <string name="digit_3">3</string>
+    <string name="digit_4">4</string>
+    <string name="digit_5">5</string>
+    <string name="digit_6">6</string>
+    <string name="digit_7">7</string>
+    <string name="digit_8">8</string>
+    <string name="digit_9">9</string>
+
+    <string name="invert">INV</string>
+    <string name="power_minus_one">x⁻¹</string>
+    <string name="factorial_sign">!</string>
+    <string name="sin_function">sin</string>
+    <string name="asin_function">sin⁻¹</string>
+    <string name="cos_function">cos</string>
+    <string name="acos_function">cos⁻¹</string>
+    <string name="tan_function">tan</string>
+    <string name="atan_function">tan⁻¹</string>
+    <string name="ln_function">ln</string>
+    <string name="exp_power_function">eˣ</string>
+    <string name="log_function">log</string>
+    <string name="ten_power_function">10ˣ</string>
+    <string name="sqrt_function">√</string>
+    <string name="square_function">x²</string>
+    <string name="pi_sign">π</string>
+    <string name="exp_sign">e</string>
+    <string name="power_sign">^</string>
+
+    <string name="bad_input_warning">Bad Input!</string>
+
 </resources>

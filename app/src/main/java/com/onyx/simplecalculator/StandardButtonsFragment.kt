@@ -22,7 +22,7 @@ class StandardButtonsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentStandardButtonsBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -65,11 +65,10 @@ class StandardButtonsFragment : Fragment() {
     }
 
     private fun changeOrientation() {
-        var currentOrientation = activity?.resources?.configuration?.orientation
+        val currentOrientation = activity?.resources?.configuration?.orientation
         if (currentOrientation == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) {
             activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-        }
-        if (currentOrientation == 2) {
+        } else {
             activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
 

@@ -29,6 +29,7 @@
             android:inputType="text"
             android:maxLines="1"
             android:layout_weight="1"
+            android:textColor="@color/output"
             android:textSize="@dimen/_25ssp"
             tools:text="5"/>
 
