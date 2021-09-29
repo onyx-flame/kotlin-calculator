@@ -30,13 +30,18 @@ class InputOutputFragment : Fragment() {
         } else { // API 11-20
             binding.inputLine.setTextIsSelectable(true)
         }
+        if (savedInstanceState != null) {
+            binding.inputLine.text!!.clear()
+            binding.inputLine.append(savedInstanceState.getString("input"))
+            binding.outputLine.text = savedInstanceState.getString("output")
+        }
         binding.inputLine.addTextChangedListener {
             val inputString = binding.inputLine.text.toString()
             val result = calculateInput(inputString)
-            if (!result.contains("NaN")) {
-                binding.outputLine.text = result
-            } else if (inputString == "") {
+            if (inputString == "" || inputString == result) {
                 binding.outputLine.text = ""
+            } else if (!result.contains("NaN")) {
+                binding.outputLine.text = result
             }
         }
         return view
@@ -58,6 +63,14 @@ class InputOutputFragment : Fragment() {
             }
         })
         // TODO: Use the ViewModel
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        println("changed")
+        outState.putString("input", binding.inputLine.text.toString())
+        outState.putString("output", binding.outputLine.text.toString())
+        viewModel.clearLiveData()
     }
 
     private fun insertSymbol(s: String) {

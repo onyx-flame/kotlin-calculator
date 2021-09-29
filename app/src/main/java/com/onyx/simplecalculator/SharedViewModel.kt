@@ -15,4 +15,9 @@ class SharedViewModel : ViewModel() {
     fun sendAction(s: String) {
         action.value = s
     }
+
+    fun clearLiveData() {
+        text.value = ""
+        action.value = ""
+    }
 }
