@@ -3,6 +3,9 @@ plugins {
     id 'kotlin-android'
 }
 
+def gitCommitsCount = Integer.parseInt('git rev-list --count HEAD'.execute().text.trim())
+def versionNumber = 'git describe --long'.execute().text.trim().replaceAll('-', '.').find('(\\d+\\.){2}\\d+')
+
 android {
     compileSdk 31
 
@@ -10,8 +13,8 @@ android {
         applicationId "com.onyx.simplecalculator"
         minSdk 23
         targetSdk 31
-        versionCode 1
-        versionName "1.0.0"
+        versionCode gitCommitsCount
+        versionName versionNumber
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
