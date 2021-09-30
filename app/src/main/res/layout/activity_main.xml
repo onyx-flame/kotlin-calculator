@@ -14,9 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:name="com.onyx.simplecalculator.InputOutputFragment"
-        tools:layout="@layout/fragment_input_output"
-        />
-
+        tools:layout="@layout/fragment_input_output" />
 
     <fragment
         android:id="@+id/standard_buttons_fragment"
@@ -25,6 +23,5 @@
         android:layout_weight="7"
         android:name="com.onyx.simplecalculator.StandardButtonsFragment"
         tools:layout="@layout/fragment_standard_buttons"/>
-
 
 </LinearLayout>

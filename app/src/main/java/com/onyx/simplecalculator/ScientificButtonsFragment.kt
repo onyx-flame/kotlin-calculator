@@ -46,7 +46,6 @@ class ScientificButtonsFragment : Fragment() {
                 }
             }
         }
-        // TODO: Use the ViewModel
     }
 
     private fun invertButtons() {
@@ -68,7 +67,6 @@ class ScientificButtonsFragment : Fragment() {
     }
 
     private fun printButtonText(s: String) {
-        println(s)
         viewModel.sendText(s)
     }
 

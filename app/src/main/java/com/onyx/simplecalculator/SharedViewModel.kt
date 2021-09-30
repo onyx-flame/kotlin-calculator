@@ -20,4 +20,5 @@ class SharedViewModel : ViewModel() {
         text.value = ""
         action.value = ""
     }
+
 }

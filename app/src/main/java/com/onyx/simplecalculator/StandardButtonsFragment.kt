@@ -12,7 +12,6 @@ import android.widget.Button
 
 import java.util.ArrayList
 
-
 class StandardButtonsFragment : Fragment() {
 
     private var _binding: FragmentStandardButtonsBinding? = null
@@ -71,16 +70,13 @@ class StandardButtonsFragment : Fragment() {
         } else {
             activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
-
     }
 
     private fun printButtonText(s: String) {
-        println(s)
         viewModel.sendText(s)
     }
 
     private fun doAction(s: String) {
-        println(s)
         viewModel.sendAction(s)
     }
 

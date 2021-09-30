@@ -14,9 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:name="com.onyx.simplecalculator.InputOutputFragment"
-        tools:layout="@layout/fragment_input_output"
-        />
-
+        tools:layout="@layout/fragment_input_output" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                style="@style/ioText"
+                style="@style/io_text"
                 android:rotation="270"
                 android:textSize="@dimen/_15ssp"
                 android:textAlignment="center"
@@ -44,7 +42,6 @@
             </TextView>
 
         </LinearLayout>
-
 
         <fragment
             android:id="@+id/standard_buttons_fragment"
@@ -55,7 +52,5 @@
             tools:layout="@layout/fragment_standard_buttons"/>
 
     </LinearLayout>
-
-
 
 </LinearLayout>

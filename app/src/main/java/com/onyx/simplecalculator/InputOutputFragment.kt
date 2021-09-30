@@ -62,12 +62,10 @@ class InputOutputFragment : Fragment() {
                 "erase" -> clearAll()
             }
         })
-        // TODO: Use the ViewModel
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        println("changed")
         outState.putString("input", binding.inputLine.text.toString())
         outState.putString("output", binding.outputLine.text.toString())
         viewModel.clearLiveData()
@@ -114,9 +112,9 @@ class InputOutputFragment : Fragment() {
         }
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }

@@ -14,91 +14,95 @@
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_rotate"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/rotate_sign"/>
             <Button
                 android:id="@+id/button_left_bracket"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/left_bracket_sign" />
             <Button
                 android:id="@+id/button_right_bracket"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/right_bracket_sign" />
             <Button
                 android:id="@+id/button_erase"
-                style="@style/eraseButton"
+                style="@style/erase_button"
                 android:text="@string/erase_sign" />
         </TableRow>
+
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_7"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_7" />
             <Button
                 android:id="@+id/button_8"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_8" />
             <Button
                 android:id="@+id/button_9"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_9" />
             <Button
                 android:id="@+id/button_divide"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/divide_sign" />
         </TableRow>
+
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_4"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_4" />
             <Button
                 android:id="@+id/button_5"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_5" />
             <Button
                 android:id="@+id/button_6"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_6" />
             <Button
                 android:id="@+id/button_multiply"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/multiply_sign" />
         </TableRow>
+
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_1"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_1" />
             <Button
                 android:id="@+id/button_2"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_2" />
             <Button
                 android:id="@+id/button_3"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_3"/>
             <Button
                 android:id="@+id/button_minus"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/minus_sign" />
         </TableRow>
+
         <TableRow android:layout_weight="1">
             <Button
                 android:id="@+id/button_0"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/digit_0" />
             <Button
                 android:id="@+id/button_dot"
-                style="@style/simpleButton"
+                style="@style/simple_button"
                 android:text="@string/dot" />
             <Button
                 android:id="@+id/button_equals"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/equals_sign"/>
             <Button
                 android:id="@+id/button_plus"
-                style="@style/operatorButton"
+                style="@style/operator_button"
                 android:text="@string/plus_sign" />
         </TableRow>
 
